@@ -107,12 +107,6 @@ nav ul li a {
 	color: var(--dark-brown-color);
 }
 
-.hero-section .right img{
-	width: 500px;
-	mix-blend-mode: color-burn;
-	vertical-align: middle;
-}
-
 .hero-section .left a{
 	font-size: 20px;
 	text-align: center;
@@ -145,4 +139,28 @@ nav ul li a {
 	font-weight: bold;
 	font-size: 40px;
 	text-align: center;
+	margin-bottom: 0px;
+}
+
+.achievements .achievement p{
+	margin-top: 0px;
+}
+
+.hero-section .right{
+	
+}
+
+.hero-section .right img{
+	width: 500px;
+	mix-blend-mode: color-burn;
+}
+
+.hero-section .right .region{
+	display: flex;
+	gap: 80px;
+}
+
+.hero-section .right .region .country img{
+	width: 70px;
+	height: 70px;
 }
