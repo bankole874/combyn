@@ -21,6 +21,7 @@ body {
     max-width: 1606px;
     margin: 0 auto;
 }
+
 .btn {
     padding: 15px 30px;
     border-radius: 18px;
@@ -93,10 +94,10 @@ nav ul li a {
 .hero-section {
     display: flex;
 	height: 100vh;
-	width: 100%
+	width: 100%;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 200px;
+	padding-top: 50px;
 	vertical-align: 10px;
 }
 
@@ -122,6 +123,8 @@ nav ul li a {
 	font-weight: bold;
 	font-size: 25px;
 	line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .achievements{
@@ -147,7 +150,7 @@ nav ul li a {
 }
 
 .hero-section .right{
-	
+	float: right;
 }
 
 .hero-section .right img{
@@ -156,6 +159,8 @@ nav ul li a {
 }
 
 .hero-section .right .region{
+    padding-top: 100px;
+    padding-left: 60px;
 	display: flex;
 	gap: 80px;
 }
@@ -164,3 +169,111 @@ nav ul li a {
 	width: 70px;
 	height: 70px;
 }
+
+/* second page */
+
+section{
+    margin-top: 100px;
+}
+
+section.top-offers .top-offers-header{
+    color: var(--dark-brown-color);
+    align-items: center;
+    gap: 900px;
+    display: inline-flex;
+}
+
+h2{
+    font-family: 'Calibri', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+.top-offers .top-offers-header .left h2{
+    
+}
+
+h3{
+    font-size: 20px;
+    letter-spacing: -0.015em;
+}
+
+h3.light{
+    color: rgba(80, 80, 80, 0.56);
+}
+
+h3.dark, p.dark{
+    color: var(--dark-brown-color)
+}
+
+.top-offers .percent-section{
+    justify-content: space-between;
+    text-align: center;
+    top: 36px;
+}
+
+.top-offers .percent-section ul li{
+    display: inline;
+}
+
+.top-offers .top-offers-cards-section{
+    text-align: center;
+    height: 100vh;
+	width: 100%;
+    padding-top: 36px;
+}
+
+.top-offers .top-offers-cards-section .row{
+    display: inline-flex;
+}
+
+.top-offers-card{
+    box-sizing: border-box;
+    border: 3px solid var(--dark-brown-color);
+    border-radius: 26px;
+    box-shadow: var(--dark-brown-color);
+    padding: 16px;
+}
+
+.top-offers .top-offers-cards-section .column{
+    width: 30%;
+    float: left;
+    width: 400px;
+    margin: 20px 20px;
+}
+
+.top-offers-card .logo-persons{
+    display: flex;
+    justify-content: center;
+}
+
+.top-offers-card .logo-persons .left{
+    margin-left: 0;
+}
+
+.top-offers-card .logo-persons .top-offers-card-logo{
+    mix-blend-mode: darken;
+}
+
+.top-offers-card .logo-persons .top-offers-card-persons{
+    justify-content: end;
+}
+
+.top-offers-card .content{
+    text-align: left;
+}
+
+.top-offers-card .botton-price{
+    display: flex;
+    justify-content: center;
+}
+  /* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px){
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
