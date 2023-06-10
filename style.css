@@ -1,6 +1,6 @@
 :root {
     --dark-yellow-color: #EDBB57;
-    --light_blue-color: #D0E4D0;
+    --light-blue-color: #D0E4D0;
     --dark-brown-color: #505050;
     --white-color: #FFFFFF;
     --light-yellow-color: #F5D58A;
@@ -153,7 +153,7 @@ nav ul li a {
 	float: right;
 }
 
-.hero-section .right img{
+.hero-section .right .hand-shake{
 	width: 500px;
 	mix-blend-mode: color-burn;
 }
@@ -172,6 +172,9 @@ nav ul li a {
 
 /* second page */
 
+.wrapper.second-page {
+}
+
 section{
     margin-top: 100px;
 }
@@ -183,15 +186,14 @@ section.top-offers .top-offers-header{
     display: inline-flex;
 }
 
+h2, h3, p{
+	font-family: 'Calibri', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 h2{
-    font-family: 'Calibri', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     font-size: 50px;
     white-space: nowrap;
-}
-
-.top-offers .top-offers-header .left h2{
-    
 }
 
 h3{
@@ -219,7 +221,6 @@ h3.dark, p.dark{
 
 .top-offers .top-offers-cards-section{
     text-align: center;
-    height: 100vh;
 	width: 100%;
     padding-top: 36px;
 }
@@ -246,6 +247,7 @@ h3.dark, p.dark{
 .top-offers-card .logo-persons{
     display: flex;
     justify-content: center;
+	gap: 180px;
 }
 
 .top-offers-card .logo-persons .left{
@@ -256,8 +258,17 @@ h3.dark, p.dark{
     mix-blend-mode: darken;
 }
 
+.top-offers-card .logo-persons .top-offers-card-logo img{
+    height: 20px;
+}
+
 .top-offers-card .logo-persons .top-offers-card-persons{
     justify-content: end;
+}
+
+.top-offers-card .logo-persons .top-offers-card-persons img{
+    width:20px;
+	height: 20px;
 }
 
 .top-offers-card .content{
@@ -267,7 +278,53 @@ h3.dark, p.dark{
 .top-offers-card .botton-price{
     display: flex;
     justify-content: center;
+	gap: 150px;
 }
+
+.top-offers .new-course{
+	top: 0px;
+	display: flex;
+    justify-content: center;
+	padding-top: 36px;
+}
+
+.more-courses .course-carousel{
+	display: flex;
+	justify-content: center;
+}
+
+.more-courses .top-slides .course-carousel .carousel-card{
+	display: float;
+    border-radius: 26px;
+    padding: 16px;
+	width: 20%;
+	text-align: center;
+	position: relative;
+}
+
+.more-courses .top-slides .course-carousel .button{
+	padding-top: 70px;
+}
+
+.more-courses .top-slides .course-carousel .carousel-card img{
+    width: 60px !important;
+	top: -15px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+}
+
+.more-courses .top-slides .course-carousel .carousel-card .card-content{
+    border: 3px solid var(--dark-brown-color);
+    border-radius: 26px;
+    box-shadow: var(--dark-brown-color);
+    padding: 16px;
+}
+
+.more-courses .top-slides .dots{
+	text-align: center;
+}
+
   /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px){
     .column {
