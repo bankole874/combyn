@@ -201,11 +201,11 @@ h3{
     letter-spacing: -0.015em;
 }
 
-h3.light{
+h3.light, h2.light, p.light{
     color: rgba(80, 80, 80, 0.56);
 }
 
-h3.dark, p.dark{
+h2.dark, h3.dark, p.dark{
     color: var(--dark-brown-color)
 }
 
@@ -288,6 +288,11 @@ h3.dark, p.dark{
 	padding-top: 36px;
 }
 
+section.more-courses-section{
+    padding-top: 60px;
+    background-color: var(--light-blue-color);
+}
+
 .more-courses .course-carousel{
 	display: flex;
 	justify-content: center;
@@ -325,6 +330,80 @@ h3.dark, p.dark{
 	text-align: center;
 }
 
+.more-courses .row .column .course-card{
+    text-align: center;
+    background-color: var(--white-color);
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.more-courses .row .column .course-card img{
+    width: 100%;
+}
+
+.more-courses .row .column .course-card .content{
+        text-align: left;
+}
+
+.more-courses .row .column .course-card .content h3{
+    display: flex;
+    
+}
+
+.more-courses .row{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: inline-flex;
+    gap: 40px;
+}
+
+.more-courses .row .column{
+    text-align: center;
+    background-color: var(--white-color);
+    float: left;
+    width: 300px;
+    margin: 20px 20px;
+}
+
+.more-courses .row .column .course-card .bottom-price{
+    display: flex;
+    vertical-align: left;
+	gap: 50px;
+}
+
+footer{
+    background-color: var(--dark-brown-color);
+    color: var(--white-color);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-family: 'Calibri', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.community .social img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.footer-section ul{
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.footer-section{
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+}
+
+.footer-section ul li{
+    margin: 16px 0;
+}
+
   /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px){
     .column {
@@ -333,4 +412,3 @@ h3.dark, p.dark{
       margin-bottom: 20px;
     }
 }
-
