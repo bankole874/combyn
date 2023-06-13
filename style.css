@@ -374,7 +374,6 @@ section.more-courses-section{
 footer{
     background-color: var(--dark-brown-color);
     color: var(--white-color);
-    padding-top: 10px;
     font-family: 'Calibri', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
