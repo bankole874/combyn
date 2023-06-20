@@ -29,6 +29,7 @@ body {
 .modal-content {
     background: var(--dark-yellow-color);
 }
+
 .navbar-scrolled {
     background-color: rgba(80,80,80,0.5);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
@@ -42,8 +43,8 @@ body {
     display: inline-block;
     font-weight: bold;
     font-size: 18px;
-	text-decoration: none;
-	position: relative;
+    text-decoration: none;
+    position: relative;
 }
 
 .butn.dark{
