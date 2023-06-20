@@ -26,7 +26,7 @@ body {
     transition: all 0.1s;
 }
 
-.modal-content {
+.modal-header {
     background: var(--dark-yellow-color);
 }
 
