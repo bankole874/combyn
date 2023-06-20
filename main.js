@@ -1,0 +1,13 @@
+const navEl = document.querySelector('.navigation');
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= 56) {
+        navEl.classList.add('navbar-scrolled');
+    } else if (window.scrollY < 56) {
+        navEl.classList.remove('navbar-scrolled');
+    }
+});
+
+//const myModal = bootstrap.Modal.getOrCreateInstance('#login-modal');
+//window.addEventListener('DOMContentLoaded', () => {
+//    myModal.show();
+//});
