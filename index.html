@@ -7,39 +7,102 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@700&display=swap" rel="stylesheet"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <title>combyn</title>
         <link rel="stylesheet" href="style.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     </head>
     <body>
-        <header>
-            <div class="wrapper">
-                <nav>
-                    <div class="logo">
-                        <img src="images/combyn_header_image.png" alt="" />
+        <div class="modal fade" tabindex="-1" id="login-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <ul class="center">
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#">Merge</a>
-                        </li>
-                    </ul>
-                    <ul class="right">
-                        <li>
-                            <a href="#">Log in</a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn light">Enrol Now</a>
-                        </li>
-                    </ul>
-                </nav>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput1" placeholder="email" />
+                                <label for="floatingInput1">Email address</label>
+                              </div>
+                              <div class="mb-3 form-floating">
+                                <input type="password" class="form-control" id="floatingPassword1" placeholder="password" />
+                                <label for="floatingPassword1">Password</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            </div>
+                            <div class="text-center">
+                                <button href="#" type="submit" class="butn light">login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" tabindex="-1" id="enrol-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-floating mb-4">
+                              <input type="text" id="floatingInput2" class="form-control" placeholder="Full Name" />
+                              <label for="floatingInput2">Full Name</label>
+                            </div>
+            
+                            <div class="form-floating mb-4">
+                              <input type="email" id="floatingInput3" class="form-control" placeholder="Email" />
+                              <label for="floatingInput3">Email</label>
+                            </div>
+            
+                            <div class="form-floating mb-4">
+                              <input type="password" id="floatingPassword3" class="form-control" placeholder="Password" />
+                              <label class="form-label" for="floatingPassword3">Password</label>
+                            </div>
+            
+                            <div class="form-floating mb-4">
+                              <input type="password" id="floatingPassword4" class="form-control" placeholder="Confirm Password" />
+                              <label class="form-label" for="floatingPassword4">Confirm Password</label>
+                            </div>
+            
+                            <div class="form-check d-flex justify-content-center mb-5">
+                              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                              <label class="form-check-label" for="form2Example3g">I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a></label>
+                            </div>
+            
+                            <div class="d-flex justify-content-center">
+                              <button type="button"
+                                class="butn light">Register</button>
+                            </div>
+                            <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!" data-bs-toggle="modal" data-bs-target="#login-modal" class="fw-bold text-body"><u>Login here</u></a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <nav class="navigation">
+                <div class="logo">
+                    <img src="images/combyn_header_image.png" alt="" />
+                </div>
+                <ul class="center">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#section-3">Courses</a></li>
+                    <li><a href="#section-2">Merge</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#" class="butn light" data-bs-toggle="modal" data-bs-target="#login-modal" style="border: 0px;">Log in</a></li>
+                    <li><a href="#" class="butn light" data-bs-toggle="modal" data-bs-target="#enrol-modal">Enrol Now</a></li>
+                </ul>
+            </nav>
+            <div class="wrapper" id="section-1">
                 <!-- end of navigation bar -->
-                <div class="hero-section">
+                <div class="hero-section" id="">
                     <div class="left">
                         <h1>COMBYN to learn a <br/>
                             new skill</h1>
@@ -47,7 +110,7 @@
                             Learn a new skill by combining resources with peers around Africa,<br/> 
                             here you get to pay a shared amount for any course.
                         </p>
-                        <a href="#" class="btn dark">Explore Courses</a>
+                        <a href="#" class="butn dark">Explore Courses</a>
                         <div class="achievements">
                             <div class="achievement">
                                 <h3>200+</h3>
@@ -69,7 +132,7 @@
                         </div>
                     </div>
                     <div class="right">
-                        <img class="hand-shake" src="images/hand_shake.jpg" alt="" />
+                        <img class="hand-shake" src="images/SVGs/hand_shake.svg" alt="" />
                         <div class="region">
                             <div class="country">
                                 <img src="images/country_Ghana_image.png" alt="" />
@@ -86,7 +149,7 @@
             </div>
         </header>
         <!-- end of header section -->
-        <div class="wrapper second-page">
+        <div class="wrapper second-page" id="section-2">
             <section class="top-offers">
                 <div class="top-offers-header">
                     <div class="left">
@@ -94,7 +157,7 @@
                     </div>
                     <div class="right">
                         <h3 class="light">
-                            Each offer consists of already booked courses.</br>
+                            Each offer consists of already booked courses.<br/>
                             Click the join button to become a group member and instantly get your own instance and start leaning.
                         </h3>
                     </div>
@@ -102,19 +165,19 @@
                 <div class="percent-section">
                     <ul>
                         <li>
-                            <a href="#" class="btn dark">General</a>
+                            <a href="#" class="butn dark">General</a>
                         </li>
                         <li>
-                            <a href="#" class="btn light">100%</a>
+                            <a href="#" class="butn light">100%</a>
                         </li>
                         <li>
-                            <a href="#" class="btn light">50%</a>
+                            <a href="#" class="butn light">50%</a>
                         </li>
                         <li>
-                            <a href="#" class="btn light">33.3%</a>
+                            <a href="#" class="butn light">33.3%</a>
                         </li>
                         <li>
-                            <a href="#" class="btn light">Others</a>
+                            <a href="#" class="butn light">Others</a>
                         </li>
                     </ul>
                 </div>
@@ -138,7 +201,7 @@
                                 </div>
                                 <div class="botton-price">
                                     <div class="left">
-                                        <a href="#" class="btn light left">join</a>
+                                        <a href="#" class="butn light left">join</a>
                                     </div>
                                     <div class="right">
                                         <h3 class="price dark right">$30 each</h3>
@@ -166,7 +229,7 @@
                                 </div>
                                 <div class="botton-price">
                                     <div class="left">
-                                        <a href="#" class="btn light left">join</a>
+                                        <a href="#" class="butn light left">join</a>
                                     </div>
                                     <div class="right">
                                         <h3 class="price dark right">$30 each</h3>
@@ -194,7 +257,7 @@
                                 </div>
                                 <div class="botton-price">
                                     <div class="left">
-                                        <a href="#" class="btn light left">join</a>
+                                        <a href="#" class="butn light left">join</a>
                                     </div>
                                     <div class="right">
                                         <h3 class="price dark right">$30 each</h3>
@@ -222,7 +285,7 @@
                                 </div>
                                 <div class="botton-price">
                                     <div class="left">
-                                        <a href="#" class="btn light left">join</a>
+                                        <a href="#" class="butn light left">join</a>
                                     </div>
                                     <div class="right">
                                         <h3 class="price dark right">$30 each</h3>
@@ -250,7 +313,7 @@
                                 </div>
                                 <div class="botton-price">
                                     <div class="left">
-                                        <a href="#" class="btn light left">join</a>
+                                        <a href="#" class="butn light left">join</a>
                                     </div>
                                     <div class="right">
                                         <h3 class="price dark right">$30 each</h3>
@@ -278,7 +341,7 @@
                                 </div>
                                 <div class="botton-price">
                                     <div class="left">
-                                        <a href="#" class="btn light left">join</a>
+                                        <a href="#" class="butn light left">join</a>
                                     </div>
                                     <div class="right">
                                         <h3 class="price dark right">$30 each</h3>
@@ -290,13 +353,13 @@
                 </div>
                 <div class="new-course">
                     <div class="new-course-button">
-                        <a href="#" class="btn dark">New Course</a>
+                        <a href="#" class="butn dark">New Course</a>
                     </div>
                 </div>
             </section>
         </div>
         <!-- end of top offers section -->
-        <section class="more-courses-section">
+        <section class="more-courses-section" id="section-3">
             <div class="wrapper">
                 <section class="more-courses">
                     <div class="top-slides">
@@ -417,7 +480,7 @@
         </section>
         <!-- end of more courses section-->
         <footer>
-            <div class="wrapper">
+            <div class="wrapper" id="section-4">
                 <section class="footer-section">
                     <div class="intro">
                         <img src="images/combyn_footer_image.png" alt="" />
@@ -462,7 +525,7 @@
                 <p class="copyright">© 2023 | Combyn. All rights reserved.</p>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>   
         <script src = "main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </body>
 </html>
