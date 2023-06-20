@@ -1,6 +1,6 @@
 :root {
-    --dark-yellow-color: rgba(237, 187, 87, 0.40);
-    --light-blue-color: rgba(208, 228, 208, 0.32);
+    --dark-yellow-color: #EDBB57;
+    --light-blue-color: #D0E4D0;
     --dark-brown-color: #505050;
     --white-color: #FFFFFF;
     --light-yellow-color: #F5D58A;
@@ -22,8 +22,19 @@ body {
     margin: 0 auto;
 }
 
-.btn {
-    padding: 15px 30px;
+.navigation {
+    transition: all 0.1s;
+}
+
+.navbar-scrolled {
+    background-color: rgba(80,80,80,0.5);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    margin-top: 0px;
+}
+
+.butn {
+    padding: 8px 20px;
     border-radius: 18px;
     display: inline-block;
     font-weight: bold;
@@ -32,15 +43,15 @@ body {
 	position: relative;
 }
 
-.btn.dark{
+.butn.dark{
     border: 3px solid var(--dark-brown-color);
     background: var(--dark-brown-color);
     color: #FFFFFF;
 }
 
-.btn.light{
+.butn.light{
     border: 3px solid var(--dark-brown-color);
-    color: #505050;
+    color: var(--dark-brown-color)
 }
 
 /* Header */
@@ -56,8 +67,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 1606px;
-    top: 36px;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px; padding-right: 157px; padding-bottom: 10px; padding-left: 157px;
     z-index: 100;
 }
 
@@ -155,7 +167,7 @@ nav ul li a {
 
 .hero-section .right .hand-shake{
 	width: 500px;
-	mix-blend-mode: color-burn;
+	mix-blend-mode: multiply;
 }
 
 .hero-section .right .region{
@@ -372,10 +384,10 @@ section.more-courses-section{
 }
 
 footer{
-    margin-top: 10px;
-    margin-bottom: 0px;
     background-color: var(--dark-brown-color);
     color: var(--white-color);
+    padding-top: 10px;
+    padding-bottom: 30px;
     font-family: 'Calibri', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
