@@ -76,10 +76,8 @@
                               <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
                               <label class="form-check-label" for="form2Example3g">I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a></label>
                             </div>
-            
                             <div class="d-flex justify-content-center">
-                              <button type="button"
-                                class="butn light">Register</button>
+                              <button type="button" class="butn light">Register</button>
                             </div>
                             <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!" data-bs-toggle="modal" data-bs-target="#login-modal" class="fw-bold text-body"><u>Login here</u></a></p>
                         </form>
@@ -88,65 +86,86 @@
             </div>
         </div>
         <header>
-            <nav class="navigation">
-                <div class="logo">
-                    <img src="images/combyn_header_image.png" alt="" />
-                </div>
-                <ul class="center">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#section-3">Courses</a></li>
-                    <li><a href="#section-2">Merge</a></li>
-                </ul>
-                <ul class="right">
-                    <li><a href="#" class="butn light" data-bs-toggle="modal" data-bs-target="#login-modal" style="border: 0px;">Log in</a></li>
-                    <li><a href="#" class="butn light" data-bs-toggle="modal" data-bs-target="#enrol-modal">Enrol Now</a></li>
-                </ul>
-            </nav>
-            <div class="wrapper" id="section-1">
+			<nav class="navbar navbar-expand-lg navigation">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#"><img src="images/combyn_header_image.png" alt="Logo" class="d-inline-block align-text-top"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Merge</a></li>
+							<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Cloud</a></li>
+									<li><a class="dropdown-item" href="#">Design</a></li>
+									<li><a class="dropdown-item" href="#">Development</a></li>
+									<li><a class="dropdown-item" href="#">Devops</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+						</ul>
+						<div class="d-flex justify-content-center">
+							<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login-modal" style="margin-right:5px"><h6>Log in<h6></button>
+							<button type="button" class="butn light" data-bs-toggle="modal" data-bs-target="#enrol-modal">Enrol Now</button>
+                        </div>
+					</div>
+				</div>
+			</nav>
+            <div class="container-fluid" id="section-1">
                 <!-- end of navigation bar -->
-                <div class="hero-section" id="">
-                    <div class="left">
-                        <h1>COMBYN to learn a <br/>
-                            new skill</h1>
-                        <p>
-                            Learn a new skill by combining resources with peers around Africa,<br/> 
-                            here you get to pay a shared amount for any course.
-                        </p>
-                        <a href="#" class="butn dark">Explore Courses</a>
-                        <div class="achievements">
-                            <div class="achievement">
-                                <h3>200+</h3>
-                                <p>Active Students</p>
-                            </div>
-                            <div class="achievement">
-                                <h3>100%</h3>
-                                <p>Positive Reviews</p>
-                            </div>
-                            <div class="achievement">
-                                <h3>03</h3>
-                                <p>Learning Platforms</p>
-                            </div>
-                        </div>
-                        <div class="region-text">
-                        <h3>
-                            Share costs with peers from more than 5 African countries.
-                        </h3>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <img class="hand-shake" src="images/SVGs/hand_shake.svg" alt="" />
-                        <div class="region">
-                            <div class="country">
-                                <img src="images/country_Ghana_image.png" alt="" />
-                            </div>
-                            <div class="country">
-                                <img src="images/country_Nigeria_image.png" alt="" />
-                            </div>
-                            <div class="country">
-                                <img src="images/country_South_Africa_image.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8" style="padding-top: 10px; padding-bottom: 20px">
+							<h1 class="d-flex py-4" style="font-size:400%">COMBYN to learn a <br/>
+								new skill</h1>
+							<p class="h4 pb-4">
+								Learn a new skill by combining resources with peers around Africa,<br/> 
+								here you get to pay a shared amount for any course.
+							</p>
+							<a class="butn dark" href="#section-3" role="button">Explore Courses</a>
+						</div>
+						<div class="col-lg-4 py-4">
+							<img class="hand-shake img-fluid align-items-center" src="images/SVGs/hand_shake.svg" alt="" />
+						</div>
+					</div>
+					<div class="row">
+                        <div class="col-lg-6">
+							<div class="row">
+								<div class="col-3 px-3 text-center">
+									<span class="num h4" data-val="200">000</span>
+									<p class="">Active Students</p>
+								</div>
+								<div class="col-3 px-3 text-center">
+									<span class="num h4" data-val="055">000</span>
+									<p class="counter-title">Course Completed</p>
+								</div>
+								<div class="col-3 px-3 text-center">
+									<span class="num h4" data-val="010">00</span>
+									<p class="counter-title">Learning Platforms</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-lg-8">
+							<h4>Share costs with peers from more than 5 African countries.</h4>
+						</div>
+						<div class="col-lg-4">
+							<div class="row py-4">
+								<div class="col-3 px-3 text-center">
+									<img src="images/country_Ghana_image.png" alt="" width="50px"/>
+								</div>
+								<div class="col-3 px-3 text-center">
+									<img src="images/country_Nigeria_image.png" alt="" width="50px"/>
+								</div>
+								<div class="col-3 px-3 text-center">
+									<img src="images/country_South_Africa_image.png" alt="" width="50px"/>
+								</div>
+							</div>
+						</div>
+					</div>
                 </div>
             </div>
         </header>
