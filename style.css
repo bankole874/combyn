@@ -27,7 +27,6 @@ body {
 .navbar-scrolled {
     background-color: rgba(80,80,80,0.5);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
-    position: fixed;
 }
 
 .butn {
@@ -75,27 +74,6 @@ nav a {
 	vertical-align: 10px;
 }
 
-.hero-section .left{
-	font-family: 'Calibri', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	width: 671px;
-	margin-bottom: 0px;
-	color: var(--dark-brown-color);
-}
-
-.hero-section .left a{
-	font-size: 20px;
-	text-align: center;
-}
-
-.hero-section .left p{
-	width: 700px;
-	font-weight: bold;
-	font-size: 25px;
-	line-height: 30px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
 .achievements{
 	display: flex;
 	align-items: center;
@@ -119,6 +97,12 @@ nav a {
 }
 
 /* second page */
+
+.page-item.active .page-link{
+	color: #FFFFFF;
+	border: 3px solid var(--dark-brown-color);
+	background-color: var(--dark-brown-color);
+}
 
 section{
     margin-top: 100px;
@@ -159,23 +143,23 @@ h2.dark, h3.dark, p.dark{
     color: var(--dark-brown-color)
 }
 
-.top-offers .percent-section{
+.percent-section{
     justify-content: space-between;
     text-align: center;
     top: 36px;
 }
 
-.top-offers .percent-section ul li{
+.percent-section ul li{
     display: inline;
 }
 
-.top-offers .top-offers-cards-section{
+.top-offers-cards-section{
     text-align: center;
 	width: 100%;
     padding-top: 36px;
 }
 
-.top-offers .top-offers-cards-section .row{
+.top-offers-cards-section .row{
     display: inline-flex;
 }
 
@@ -187,7 +171,7 @@ h2.dark, h3.dark, p.dark{
     padding: 16px;
 }
 
-.top-offers .top-offers-cards-section .column{
+.top-offers-cards-section .column{
     width: 30%;
     float: left;
     width: 400px;
