@@ -1,2 +1,2 @@
-# combyn
-https://webinars.cecureintel.com/meeting/register/join?registerKey=9ccff1d5595fcd38bd6f17d6740c1ced4a3be5a687b5d4f6257f9d1e52150b14&sessionId=1069786359&uname=Hammed%20Bankole
+# Combyn
+
