@@ -177,101 +177,44 @@
             </div>
 			<nav aria-label="Page navigation example">
 			  <ul class="pagination justify-content-center">
-				<li class="page-item active p-2"><button type="button" value="button" href="#" class="butn dark page-link" role="button">General</button></li>
-				<li class="page-item p-2"><button type="button" value="button" href="#" class="butn light page-link" role="button">100%</button></li>
-				<li class="page-item p-2"><button type="button" value="button" href="#" class="butn light page-link" role="button">50%</button></li>
-				<li class="page-item p-2"><button type="button" value="button" href="#" class="butn light page-link" role="button">others</button></li>
+				<li class="page-item active p-2"><button type="button" value="button" class="butn dark page-link" role="button" id="allBooked">General</button></li>
+				<li class="page-item p-2"><button type="button" value="button" class="butn light page-link" role="button" id="fullBooked">100%</button></li>
+				<li class="page-item p-2"><button type="button" value="button" class="butn light page-link" role="button" id="halfBooked">50%</button></li>
+				<li class="page-item p-2"><button type="button" value="button" class="butn light page-link" role="button" id="neitherFullHalf">others</button></li>
 			  </ul>
 			</nav>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100 top-offers-card">
-						<img src="images/SVGs/study_code_review.svg" class="card-img-top" alt="study">
+                <div class="col" id="courseCard" style="display:none">
+                    <div class="card h-100">
+						<img src="images/SVGs/study_code_review.svg" class="card-img-top" alt="study" id="cardImage">
 						<div class="card-body">
-							<h3 class="card-title dark">Log2Base2 Visual Learning <span id="separator">|</span><span class="courseLength">16h</span></h3>
-							<p class="card-text dark">Learn programming, data structures & algorithm and prepare for the coding interview.</p>
-							<p class="card-text dark"><b>Beginner</b></p>
+							<h3 class="card-title dark" id="cardTitle">Log2Base2 Visual Learning <span id="separator">|</span><span class="courseLength">16h</span></h3>
+							<p class="card-text dark" id="cardDescription">Learn programming, data structures & algorithm and prepare for the coding interview.</p>
+							<p class="card-text dark" id="cardLevel"><b>Beginner</b></p>
 						</div>
-						<div class="card-footer">
+						<div class="card-footer" id="cardFooter">
 							<div class="row align-items-center justify-content-center">
 								<div class="col-6">
-									<a href="#" class="butn dark left">join</a>
+									<a href="#" class="butn dark left" id="cardButton">join</a>
 								</div>
 								<div class="col-6">
 									<div class="row justify-content-center">
-										<div class="col-3 text-center">
+										<div class="col-3 text-center" id="cardPerson">
 											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
 										</div>
-										<div class="col-3 text-center">
-											<img class="img-fluid" src="images/SVGs/person_light_icon.svg" alt="" width="25px"/>
+										<!--<div class="col-3 text-center" id="cardPerson">
+											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
 										</div>
+										<div class="col-3 text-center" id="cardPerson">
+											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
+										</div>-->
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-                <div class="col">
-                    <div class="card h-100 top-offers-card">
-						<img src="images/SVGs/study_code_review.svg" class="card-img-top" alt="study">
-						<div class="card-body">
-							<h3 class="card-title dark">Log2Base2 Visual Learning <span id="separator">|</span><span class="courseLength">16h</span></h3>
-							<p class="card-text dark">Learn programming, data structures & algorithm and prepare for the coding interview.</p>
-							<p class="card-text dark"><b>Beginner</b></p>
-						</div>
-						<div class="card-footer">
-							<div class="row align-items-center justify-content-center">
-								<div class="col-6">
-									<a href="#" class="butn dark left">join</a>
-								</div>
-								<div class="col-6">
-									<div class="row justify-content-center">
-										<div class="col-3 text-center">
-											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
-										</div>
-										<div class="col-3 text-center">
-											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
-										</div>
-										<div class="col-3 text-center">
-											<img class="img-fluid" src="images/SVGs/person_light_icon.svg" alt="" width="25px"/>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-                <div class="col">
-                    <div class="card h-100 top-offers-card">
-						<img src="images/SVGs/study_code_review.svg" class="card-img-top" alt="study">
-						<div class="card-body">
-							<h3 class="card-title dark">Log2Base2 Visual Learning <span id="separator">|</span><span class="courseLength">16h</span></h3>
-							<p class="card-text dark">Learn programming, data structures & algorithm and prepare for the coding interview.</p>
-							<p class="card-text dark"><b>Beginner</b></p>
-						</div>
-						<div class="card-footer">
-							<div class="row align-items-center justify-content-center">
-								<div class="col-6">
-									<a href="#" class="butn dark left">join</a>
-								</div>
-								<div class="col-6">
-									<div class="row justify-content-center">
-										<div class="col-3 text-center">
-											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
-										</div>
-										<div class="col-3 text-center">
-											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
-										</div>
-										<div class="col-3 text-center">
-											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-                <div class="col">
+                <div class="col" id="courseCard" style="display:none">
                     <div class="card h-100 top-offers-card">
 						<img src="images/SVGs/study_code_review.svg" class="card-img-top" alt="study">
 						<div class="card-body">
@@ -301,7 +244,67 @@
 						</div>
 					</div>
 				</div>
-                <div class="col">
+                <div class="col" id="courseCard" style="display:none">
+                    <div class="card h-100 top-offers-card">
+						<img src="images/SVGs/study_code_review.svg" class="card-img-top" alt="study">
+						<div class="card-body">
+							<h3 class="card-title dark">Log2Base2 Visual Learning <span id="separator">|</span><span class="courseLength">16h</span></h3>
+							<p class="card-text dark">Learn programming, data structures & algorithm and prepare for the coding interview.</p>
+							<p class="card-text dark"><b>Beginner</b></p>
+						</div>
+						<div class="card-footer">
+							<div class="row align-items-center justify-content-center">
+								<div class="col-6">
+									<a href="#" class="butn dark left">join</a>
+								</div>
+								<div class="col-6">
+									<div class="row justify-content-center">
+										<div class="col-3 text-center">
+											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
+										</div>
+										<div class="col-3 text-center">
+											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
+										</div>
+										<div class="col-3 text-center">
+											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col" id="courseCard" style="display:none">
+                    <div class="card h-100 top-offers-card">
+						<img src="images/SVGs/study_code_review.svg" class="card-img-top" alt="study">
+						<div class="card-body">
+							<h3 class="card-title dark">Log2Base2 Visual Learning <span id="separator">|</span><span class="courseLength">16h</span></h3>
+							<p class="card-text dark">Learn programming, data structures & algorithm and prepare for the coding interview.</p>
+							<p class="card-text dark"><b>Beginner</b></p>
+						</div>
+						<div class="card-footer">
+							<div class="row align-items-center justify-content-center">
+								<div class="col-6">
+									<a href="#" class="butn dark left">join</a>
+								</div>
+								<div class="col-6">
+									<div class="row justify-content-center">
+										<div class="col-3 text-center">
+											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
+										</div>
+										<div class="col-3 text-center">
+											<img class="img-fluid" src="images/SVGs/person_dark_icon.svg" alt="" width="25px"/>
+										</div>
+										<div class="col-3 text-center">
+											<img class="img-fluid" src="images/SVGs/person_light_icon.svg" alt="" width="25px"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col" id="courseCard" style="display:none">
                     <div class="card h-100 top-offers-card">
 						<img src="images/SVGs/study_code_review.svg" class="card-img-top" alt="study">
 						<div class="card-body">
@@ -328,7 +331,7 @@
 						</div>
 					</div>
 				</div>
-                <div class="col">
+                <div class="col" id="courseCard" style="display:none">
                     <div class="card h-100 top-offers-card">
 						<img src="images/SVGs/study_code_review.svg" class="card-img-top" alt="study">
 						<div class="card-body">
