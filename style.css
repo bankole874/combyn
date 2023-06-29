@@ -74,28 +74,6 @@ nav a {
 	vertical-align: 10px;
 }
 
-.achievements{
-	display: flex;
-	align-items: center;
-	gap: 80px;
-}
-
-.achievements .achievement{
-    color: var(--dark-brown-color);
-	width: 158px;
-}
-
-.achievements .achievement h3{
-	font-weight: bold;
-	font-size: 40px;
-	text-align: center;
-	margin-bottom: 0px;
-}
-
-.achievements .achievement p{
-	margin-top: 0px;
-}
-
 /* second page */
 
 .page-item.active .page-link{
@@ -141,16 +119,6 @@ h3.light, h2.light, p.light{
 
 h2.dark, h3.dark, p.dark{
     color: var(--dark-brown-color)
-}
-
-.percent-section{
-    justify-content: space-between;
-    text-align: center;
-    top: 36px;
-}
-
-.percent-section ul li{
-    display: inline;
 }
 
 .top-offers-cards-section{
@@ -323,25 +291,5 @@ footer a{
     padding: 5px;
 }
 
-.footer-section ul{
-    list-style-type: none;
-    padding-left: 20px;
-}
-
-.footer-section{
-    display: grid;
-    grid-template-columns: 3fr 2fr 2fr;
-}
-
-.footer-section ul li{
-    margin: 16px 0;
-}
-
   /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px){
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-}
+
