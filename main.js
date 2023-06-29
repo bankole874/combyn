@@ -28,24 +28,40 @@ valueDisplays.forEach((valueDisplay) => {
 //    myModal.show();
 //});
 
-let coureCard = document.querySelector('#courseCard')
-coureCard = {
-	cardImage: ,
-	cardTitle: ,
-	cardLevel: ,
-	cardButton: ,
-	cardPerson: ,
-}
+//let card = document.querySelector('#courseCard')
+//card = {
+//	cardImage: ,
+//	cardTitle: ,
+//	cardLevel: ,
+//	cardButton: ,
+//	cardPerson: ,
+//}
 
-let allBooked = document.querySelector('#allBooked')
 let fullBooked = document.querySelector('#fullBooked')
 let halfBooked = document.querySelector('#halfBooked')
 let neitherFullHalf = document.querySelector('#neitherFullHalf')
-let courseCard = document.querySelector('#card')
+let courseCard = document.querySelectorAll('#courseCard')
+let allBooked = document.querySelector('#allBooked')
 
-allBooked.addEventListener("click", function() {
-	courseCard.style.display = "block";
-})
+function displayCards() {
+	courseCard.forEach(function(card) {
+		card.style.display = "block";
+	});
+}
+
+function hideCards() {
+	courseCard.forEach(function(card) {
+		card.style.display = "none";
+	});
+}
+
+allBooked.addEventListener("click", displayCards);
+fullBooked.addEventListener("click", hideCards);
+halfBooked.addEventListener("click", hideCards);
+neitherFullHalf.addEventListener("click", hideCards);
+
+
+
 
 
 	
