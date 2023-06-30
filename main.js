@@ -48,20 +48,40 @@ function displayCards() {
 		card.style.display = "block";
 	});
 }
-
 function hideCards() {
 	courseCard.forEach(function(card) {
 		card.style.display = "none";
 	});
 }
-
 allBooked.addEventListener("click", displayCards);
 fullBooked.addEventListener("click", hideCards);
 halfBooked.addEventListener("click", hideCards);
 neitherFullHalf.addEventListener("click", hideCards);
 
-
-
-
-
-	
+//course buttons
+function activeButtonCloud(darkImage) {
+	darkImage.src = "images/SVGs/courses_cloud_dark.svg";
+	return true;
+}
+function inActiveButtonCloud(lightImage) {
+	lightImage.src = "images/SVGs/courses_cloud_light.svg";
+}
+function activeButtonDesign(darkImage) {
+	darkImage.src = "images/SVGs/courses_design_dark.svg";
+}
+function inActiveButtonDesign(lightImage) {
+	lightImage.src = "images/SVGs/courses_design_light.svg";
+}
+function activeButtonDevelopment(darkImage) {
+	darkImage.src = "images/SVGs/courses_development_dark.svg";
+	return true;
+}
+function inActiveButtonDevelopment(lightImage) {
+	lightImage.src = "images/SVGs/courses_development_light.svg";
+}
+function activeButtonDevops(darkImage) {
+	darkImage.src = "images/SVGs/courses_devops_dark.svg";
+}
+function inActiveButtonDevops(lightImage) {
+	lightImage.src = "images/SVGs/courses_devops_light.svg";
+}

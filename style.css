@@ -47,7 +47,7 @@ body {
 
 .butn.light{
     border: 3px solid var(--dark-brown-color);
-    color: var(--dark-brown-color)
+    background-color: none;
 }
 
 /* Header */
@@ -117,7 +117,7 @@ h3.light, h2.light, p.light{
     color: rgba(80, 80, 80, 0.56);
 }
 
-h2.dark, h3.dark, p.dark{
+h1.dark, h2.dark, h3.dark, h4.dark, p.dark{
     color: var(--dark-brown-color)
 }
 
