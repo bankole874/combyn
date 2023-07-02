@@ -239,38 +239,31 @@ section.more-courses-section{
     box-sizing: border-box;
 }
 
-.more-courses .row .column .course-card img{
-    width: 100%;
+label.available-courses{
+    border: 3px solid var(--dark-brown-color);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+	width: 60px;
+    justify-content: center;
+    &:focus, &:active {
+        border: 3px solid var(--dark-brown-color);
+    }
 }
 
-.more-courses .row .column .course-card .content{
-        text-align: left;
+input[type="radio"] {
+	opacity: 0;
+	width: 0;
+  height: 0;
 }
 
-.more-courses .row .column .course-card .content h3{
-    display: flex;
-    
+input[type="radio"]:active ~ label {
+  opacity: 1;
 }
 
-.more-courses .row{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: inline-flex;
-    gap: 40px;
-}
-
-.more-courses .row .column{
-    text-align: center;
-    background-color: var(--white-color);
-    float: left;
-    width: 300px;
-    margin: 20px 20px;
-}
-
-.more-courses .row .column .course-card .bottom-price{
-    display: flex;
-    vertical-align: left;
-	gap: 50px;
+input[type="radio"]:checked ~ label {
+    opacity: 1;
+	background-color: var(--dark-yellow-color);
 }
 
 footer{
@@ -280,16 +273,6 @@ footer{
 	width: 100%;
 }
 
-footer a{
-    text-decoration: none;
-    color: var(--white-color);
-}
-
-.community .social img{
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-}
 
   /* Responsive columns - one column layout (vertical) on small screens */
 

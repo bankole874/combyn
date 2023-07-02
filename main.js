@@ -59,15 +59,18 @@ halfBooked.addEventListener("click", hideCards);
 neitherFullHalf.addEventListener("click", hideCards);
 
 //course buttons
+
 function activeButtonCloud(darkImage) {
-	darkImage.src = "images/SVGs/courses_cloud_dark.svg";
-	return true;
-}
-function inActiveButtonCloud(lightImage) {
-	lightImage.src = "images/SVGs/courses_cloud_light.svg";
+	if (darkImage.src = "images/SVGs/courses_cloud_dark.svg"){
+		darkImage.src = "images/SVGs/courses_cloud_light.svg"
+	}
+	else if (darkImage.src = "images/SVGs/courses_cloud_light.svg"){
+		darkImage.src = "images/SVGs/courses_cloud_dark.svg"
+	}
 }
 function activeButtonDesign(darkImage) {
 	darkImage.src = "images/SVGs/courses_design_dark.svg";
+	return true;
 }
 function inActiveButtonDesign(lightImage) {
 	lightImage.src = "images/SVGs/courses_design_light.svg";
@@ -81,6 +84,7 @@ function inActiveButtonDevelopment(lightImage) {
 }
 function activeButtonDevops(darkImage) {
 	darkImage.src = "images/SVGs/courses_devops_dark.svg";
+	return true;
 }
 function inActiveButtonDevops(lightImage) {
 	lightImage.src = "images/SVGs/courses_devops_light.svg";
